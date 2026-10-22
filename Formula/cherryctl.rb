@@ -5,30 +5,35 @@
 class Cherryctl < Formula
   desc "Official Cherry Servers CLI"
   homepage "https://www.cherryservers.com/"
-  version "2.1.4"
-  license "MPL-2.0"
+  version "2.1.16"
+  license "MPL-2.0" # MPL 2.0
+
+  livecheck do
+    url "https://github.com/matns/cherryctl"
+    strategy :github_latest
+  end
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/matns/cherryctl/releases/download/v2.1.4/cherryctl-v2.1.4-darwin-amd64.tar.gz"
-      sha256 "e3912ec6e182392da872baef642769feb60462de222cf7174e81efccddb7d3e9"
+      url "https://github.com/matns/cherryctl/releases/download/v2.1.16/cherryctl-v2.1.16-darwin-amd64.tar.gz"
+      sha256 "09646f3c49cb8a274ee3cbd071518ae38c63fcd190e7bbe367643492ff775c0c"
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/matns/cherryctl/releases/download/v2.1.4/cherryctl-v2.1.4-darwin-arm64.tar.gz"
-      sha256 "ef2aea4102674f9a3f1944a219d7727e664a12fbe12ca9cbaaaefae4abcecbdf"
+      url "https://github.com/matns/cherryctl/releases/download/v2.1.16/cherryctl-v2.1.16-darwin-arm64.tar.gz"
+      sha256 "e0a211975e8d6aaa1f8156435e659aa8794af57aee9a6db65eeea0884e41fc65"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.1.4/cherryctl-v2.1.4-linux-amd64-gnu.tar.gz"
-      sha256 "e4ed7614d5d83608623e2b5c20fe97a34a755efd8af92e6a007bafce76f66546"
+      url "https://github.com/matns/cherryctl/releases/download/v2.1.16/cherryctl-v2.1.16-linux-amd64-gnu.tar.gz"
+      sha256 "ef07ddce212bd10282af2de5e5a5e02e4093530585f1efc71f3861879d6e566c"
     end
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.1.4/cherryctl-v2.1.4-linux-arm64-static.tar.gz"
-      sha256 "2b7d6791121c19735e68efddbcc4ff93984381785bd2e5c3f0847ff8f089e4f3"
+      url "https://github.com/matns/cherryctl/releases/download/v2.1.16/cherryctl-v2.1.16-linux-arm64-static.tar.gz"
+      sha256 "25fe4f992ffa4b2ac69f92ce0b5420f16ca3fa42e6c4e746e7bca67cfe19b6e8"
     end
   end
 
