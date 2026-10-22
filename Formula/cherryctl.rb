@@ -5,7 +5,7 @@
 class Cherryctl < Formula
   desc "Official Cherry Servers CLI"
   homepage "https://www.cherryservers.com/"
-  version "2.1.16"
+  version "2.1.17"
   license "MPL-2.0" # MPL 2.0
 
   livecheck do
@@ -15,25 +15,25 @@ class Cherryctl < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/matns/cherryctl/releases/download/v2.1.16/cherryctl-v2.1.16-darwin-amd64.tar.gz"
-      sha256 "09646f3c49cb8a274ee3cbd071518ae38c63fcd190e7bbe367643492ff775c0c"
+      url "https://github.com/matns/cherryctl/releases/download/v2.1.17/cherryctl-v2.1.17-darwin-amd64.tar.gz"
+      sha256 "1390c27ecfe8f4cf0186a40bc74110064b663d5d2c18248fb40dcf20231fd33c"
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/matns/cherryctl/releases/download/v2.1.16/cherryctl-v2.1.16-darwin-arm64.tar.gz"
-      sha256 "e0a211975e8d6aaa1f8156435e659aa8794af57aee9a6db65eeea0884e41fc65"
+      url "https://github.com/matns/cherryctl/releases/download/v2.1.17/cherryctl-v2.1.17-darwin-arm64.tar.gz"
+      sha256 "55a11d342370372fa089bd212a5e26ff7a9b27d9f5deb9891f51935d12c4b256"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.1.16/cherryctl-v2.1.16-linux-amd64-gnu.tar.gz"
-      sha256 "ef07ddce212bd10282af2de5e5a5e02e4093530585f1efc71f3861879d6e566c"
+      url "https://github.com/matns/cherryctl/releases/download/v2.1.17/cherryctl-v2.1.17-linux-amd64-gnu.tar.gz"
+      sha256 "809666abc46e3a4d01933439fa2dde81862168823b6170b36e1d7c59890d936e"
     end
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.1.16/cherryctl-v2.1.16-linux-arm64-static.tar.gz"
-      sha256 "25fe4f992ffa4b2ac69f92ce0b5420f16ca3fa42e6c4e746e7bca67cfe19b6e8"
+      url "https://github.com/matns/cherryctl/releases/download/v2.1.17/cherryctl-v2.1.17-linux-arm64-static.tar.gz"
+      sha256 "65eb1e178721c7d4af8eaa9961412a66e2b41c08dd51cfebb7d622c1ac62ea6f"
     end
   end
 
