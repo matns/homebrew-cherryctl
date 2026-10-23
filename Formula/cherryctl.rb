@@ -5,7 +5,7 @@
 class Cherryctl < Formula
   desc "Official Cherry Servers CLI"
   homepage "https://www.cherryservers.com/"
-  version "2.1.18"
+  version "2.1.19"
   license "MPL-2.0" # MPL 2.0
 
   livecheck do
@@ -15,25 +15,25 @@ class Cherryctl < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/matns/cherryctl/releases/download/v2.1.18/cherryctl-v2.1.18-darwin-amd64.tar.gz"
-      sha256 "2eea19911c6bfcf9ad764ba91577b8d414f6944866cac15b15daeebd71f0d706"
+      url "https://github.com/matns/cherryctl/releases/download/v2.1.19/cherryctl-v2.1.19-darwin-amd64.tar.gz"
+      sha256 "f5d7cdea1f5fd17ea436081beec1fd65abd6eaaddfa283777ac2501bd30aa727"
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/matns/cherryctl/releases/download/v2.1.18/cherryctl-v2.1.18-darwin-arm64.tar.gz"
-      sha256 "ee1d996c1beb191cd5f78eb13d2565bee7abea011c80ea761c89f5968eaf139c"
+      url "https://github.com/matns/cherryctl/releases/download/v2.1.19/cherryctl-v2.1.19-darwin-arm64.tar.gz"
+      sha256 "5a6c70847e895cf4964c7fffe27eb2cae4ae191124020bf0abb9da75f23069af"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.1.18/cherryctl-v2.1.18-linux-amd64-gnu.tar.gz"
-      sha256 "82541da58abe57394ce79fca79f56a8e39b4c264f67005fb5692db574a3ccdde"
+      url "https://github.com/matns/cherryctl/releases/download/v2.1.19/cherryctl-v2.1.19-linux-amd64-gnu.tar.gz"
+      sha256 "4c08d7b27a87452d1fe3bd37aa92ea01c06867c2adde9ae15f21b3a7d60bf243"
     end
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.1.18/cherryctl-v2.1.18-linux-arm64-static.tar.gz"
-      sha256 "2bd5c4b04d133f11d76ffc7ea1e255a3aa9725503e0ea2ac215766c551588767"
+      url "https://github.com/matns/cherryctl/releases/download/v2.1.19/cherryctl-v2.1.19-linux-arm64-static.tar.gz"
+      sha256 "d9cc6d8e584739c0efa0da72bef8b9643d24d26301a5ceba2aad3261bdea6e14"
     end
   end
 
