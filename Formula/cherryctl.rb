@@ -5,7 +5,7 @@
 class Cherryctl < Formula
   desc "Official Cherry Servers CLI"
   homepage "https://www.cherryservers.com/"
-  version "2.1.19"
+  version "2.1.23"
   license "MPL-2.0" # MPL 2.0
 
   livecheck do
@@ -15,25 +15,25 @@ class Cherryctl < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/matns/cherryctl/releases/download/v2.1.19/cherryctl-v2.1.19-darwin-amd64.tar.gz"
-      sha256 "f5d7cdea1f5fd17ea436081beec1fd65abd6eaaddfa283777ac2501bd30aa727"
+      url "https://github.com/matns/cherryctl/releases/download/v2.1.23/cherryctl-v2.1.23-darwin-amd64.tar.gz"
+      sha256 "c4c3812b6d6608b085b272752d3e397057885ab8dc6f21fd8e3aeba1c81e61b9"
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/matns/cherryctl/releases/download/v2.1.19/cherryctl-v2.1.19-darwin-arm64.tar.gz"
-      sha256 "5a6c70847e895cf4964c7fffe27eb2cae4ae191124020bf0abb9da75f23069af"
+      url "https://github.com/matns/cherryctl/releases/download/v2.1.23/cherryctl-v2.1.23-darwin-arm64.tar.gz"
+      sha256 "568f3bd33e85f2d4812962d433870e937fbc6aa0f90a99320c0390dbaa56eb69"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.1.19/cherryctl-v2.1.19-linux-amd64-gnu.tar.gz"
-      sha256 "4c08d7b27a87452d1fe3bd37aa92ea01c06867c2adde9ae15f21b3a7d60bf243"
+      url "https://github.com/matns/cherryctl/releases/download/v2.1.23/cherryctl-v2.1.23-linux-amd64-gnu.tar.gz"
+      sha256 "84682b0c7b20f48294886a2416684c2bdbd74736657b4ab2f0b32ed59014f60f"
     end
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.1.19/cherryctl-v2.1.19-linux-arm64-static.tar.gz"
-      sha256 "d9cc6d8e584739c0efa0da72bef8b9643d24d26301a5ceba2aad3261bdea6e14"
+      url "https://github.com/matns/cherryctl/releases/download/v2.1.23/cherryctl-v2.1.23-linux-arm64-static.tar.gz"
+      sha256 "8955ddcf4066c6c8aa58e26f97d7c530d21e264e2130d0b5b00e8a266b0c2e6a"
     end
   end
 
