@@ -5,7 +5,7 @@
 class Cherryctl < Formula
   desc "Official Cherry Servers CLI"
   homepage "https://www.cherryservers.com/"
-  version "2.1.17"
+  version "2.1.18"
   license "MPL-2.0" # MPL 2.0
 
   livecheck do
@@ -15,25 +15,25 @@ class Cherryctl < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/matns/cherryctl/releases/download/v2.1.17/cherryctl-v2.1.17-darwin-amd64.tar.gz"
-      sha256 "1390c27ecfe8f4cf0186a40bc74110064b663d5d2c18248fb40dcf20231fd33c"
+      url "https://github.com/matns/cherryctl/releases/download/v2.1.18/cherryctl-v2.1.18-darwin-amd64.tar.gz"
+      sha256 "2eea19911c6bfcf9ad764ba91577b8d414f6944866cac15b15daeebd71f0d706"
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/matns/cherryctl/releases/download/v2.1.17/cherryctl-v2.1.17-darwin-arm64.tar.gz"
-      sha256 "55a11d342370372fa089bd212a5e26ff7a9b27d9f5deb9891f51935d12c4b256"
+      url "https://github.com/matns/cherryctl/releases/download/v2.1.18/cherryctl-v2.1.18-darwin-arm64.tar.gz"
+      sha256 "ee1d996c1beb191cd5f78eb13d2565bee7abea011c80ea761c89f5968eaf139c"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.1.17/cherryctl-v2.1.17-linux-amd64-gnu.tar.gz"
-      sha256 "809666abc46e3a4d01933439fa2dde81862168823b6170b36e1d7c59890d936e"
+      url "https://github.com/matns/cherryctl/releases/download/v2.1.18/cherryctl-v2.1.18-linux-amd64-gnu.tar.gz"
+      sha256 "82541da58abe57394ce79fca79f56a8e39b4c264f67005fb5692db574a3ccdde"
     end
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.1.17/cherryctl-v2.1.17-linux-arm64-static.tar.gz"
-      sha256 "65eb1e178721c7d4af8eaa9961412a66e2b41c08dd51cfebb7d622c1ac62ea6f"
+      url "https://github.com/matns/cherryctl/releases/download/v2.1.18/cherryctl-v2.1.18-linux-arm64-static.tar.gz"
+      sha256 "2bd5c4b04d133f11d76ffc7ea1e255a3aa9725503e0ea2ac215766c551588767"
     end
   end
 
