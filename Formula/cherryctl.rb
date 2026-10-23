@@ -5,7 +5,7 @@
 class Cherryctl < Formula
   desc "Official Cherry Servers CLI"
   homepage "https://www.cherryservers.com/"
-  version "2.1.23"
+  version "2.1.24"
   license "MPL-2.0" # MPL 2.0
 
   livecheck do
@@ -15,25 +15,25 @@ class Cherryctl < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/matns/cherryctl/releases/download/v2.1.23/cherryctl-v2.1.23-darwin-amd64.tar.gz"
-      sha256 "c4c3812b6d6608b085b272752d3e397057885ab8dc6f21fd8e3aeba1c81e61b9"
+      url "https://github.com/matns/cherryctl/releases/download/v2.1.24/cherryctl-v2.1.24-darwin-amd64.tar.gz"
+      sha256 "7d85e9c78fd08651f74a696a3731359c99d24110ce57535725a9641bfa7b0aa2"
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/matns/cherryctl/releases/download/v2.1.23/cherryctl-v2.1.23-darwin-arm64.tar.gz"
-      sha256 "568f3bd33e85f2d4812962d433870e937fbc6aa0f90a99320c0390dbaa56eb69"
+      url "https://github.com/matns/cherryctl/releases/download/v2.1.24/cherryctl-v2.1.24-darwin-arm64.tar.gz"
+      sha256 "a0a5d5fef715c7a158ea3e2980041b298e657608df81a51b16f7dfb86e982d41"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.1.23/cherryctl-v2.1.23-linux-amd64-gnu.tar.gz"
-      sha256 "84682b0c7b20f48294886a2416684c2bdbd74736657b4ab2f0b32ed59014f60f"
+      url "https://github.com/matns/cherryctl/releases/download/v2.1.24/cherryctl-v2.1.24-linux-amd64-gnu.tar.gz"
+      sha256 "5f955c556da4ec2f279292d7944ef8bee2ccd5f5814f738e47fe809bdf7a9581"
     end
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.1.23/cherryctl-v2.1.23-linux-arm64-static.tar.gz"
-      sha256 "8955ddcf4066c6c8aa58e26f97d7c530d21e264e2130d0b5b00e8a266b0c2e6a"
+      url "https://github.com/matns/cherryctl/releases/download/v2.1.24/cherryctl-v2.1.24-linux-arm64-static.tar.gz"
+      sha256 "8485cf2364310875543f1c4948f79e9fe5f2819943794451545ef546fac1141d"
     end
   end
 
