@@ -5,7 +5,7 @@
 class Cherryctl < Formula
   desc "Official Cherry Servers CLI"
   homepage "https://www.cherryservers.com/"
-  version "2.1.24"
+  version "2.1.27"
   license "MPL-2.0" # MPL 2.0
 
   livecheck do
@@ -15,25 +15,25 @@ class Cherryctl < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/matns/cherryctl/releases/download/v2.1.24/cherryctl-v2.1.24-darwin-amd64.tar.gz"
-      sha256 "7d85e9c78fd08651f74a696a3731359c99d24110ce57535725a9641bfa7b0aa2"
+      url "https://github.com/matns/cherryctl/releases/download/v2.1.27/cherryctl-v2.1.27-darwin-amd64.tar.gz"
+      sha256 "c9b2c9346048e9367a39700afa432913e0f6d19c90213818e1f8fd89c7ef70f4"
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/matns/cherryctl/releases/download/v2.1.24/cherryctl-v2.1.24-darwin-arm64.tar.gz"
-      sha256 "a0a5d5fef715c7a158ea3e2980041b298e657608df81a51b16f7dfb86e982d41"
+      url "https://github.com/matns/cherryctl/releases/download/v2.1.27/cherryctl-v2.1.27-darwin-arm64.tar.gz"
+      sha256 "6a0820fbf78db32fc6523bed3ae3bc715b611b6b88037ce59d47f057046b31d1"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.1.24/cherryctl-v2.1.24-linux-amd64-gnu.tar.gz"
-      sha256 "5f955c556da4ec2f279292d7944ef8bee2ccd5f5814f738e47fe809bdf7a9581"
+      url "https://github.com/matns/cherryctl/releases/download/v2.1.27/cherryctl-v2.1.27-linux-amd64-gnu.tar.gz"
+      sha256 "5cc74f4e0988960e5dc403631e082a42a806df438ad5f9019f318e275b328153"
     end
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.1.24/cherryctl-v2.1.24-linux-arm64-static.tar.gz"
-      sha256 "8485cf2364310875543f1c4948f79e9fe5f2819943794451545ef546fac1141d"
+      url "https://github.com/matns/cherryctl/releases/download/v2.1.27/cherryctl-v2.1.27-linux-arm64-static.tar.gz"
+      sha256 "16808630a8a6967b0f65a0b5513dab1c76da70d0efaf97ce127caf96aeaec02d"
     end
   end
 
