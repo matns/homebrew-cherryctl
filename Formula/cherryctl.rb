@@ -5,7 +5,7 @@
 class Cherryctl < Formula
   desc "Official Cherry Servers CLI"
   homepage "https://www.cherryservers.com/"
-  version "2.2.46"
+  version "2.2.48"
   license "MPL-2.0" # MPL 2.0
 
   livecheck do
@@ -15,25 +15,25 @@ class Cherryctl < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.46/cherryctl-v2.2.46-darwin-amd64.tar.gz"
-      sha256 "1e1fbf87193e634c78534d9128ade2e72d93be8db01ace80d572aaf8e3959182"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.48/cherryctl-v2.2.48-darwin-amd64.tar.gz"
+      sha256 "e4af5c6fbc1a5e3b44e0da89c46e03b6d0c0628a971dee28d83994ee94aa5c17"
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.46/cherryctl-v2.2.46-darwin-arm64.tar.gz"
-      sha256 "dd789d96b8a3a7244ac3ae68581a8b6bf728bf9f017a80297852439f0fc0f91b"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.48/cherryctl-v2.2.48-darwin-arm64.tar.gz"
+      sha256 "d684a89b5c68e4c269656eec75673fe171ae6bd668ac7bcab0ee6f206a82465d"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.46/cherryctl-v2.2.46-linux-amd64-gnu.tar.gz"
-      sha256 "bcd3a929439f7d52c2b2bc6a894512fd0380297896d7e216f4cc41e2b6f1fe0c"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.48/cherryctl-v2.2.48-linux-amd64-gnu.tar.gz"
+      sha256 "8e72aeb1e2a0854f37adcd8fa14532f54ac8050ef275797f09a7c4f49f254e67"
     end
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.46/cherryctl-v2.2.46-linux-arm64-static.tar.gz"
-      sha256 "34a05e9e4dd96e3134bc78f93771b7bddb07281a5934dc834926bbaa02930870"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.48/cherryctl-v2.2.48-linux-arm64-static.tar.gz"
+      sha256 "c98b154d2a5bbf7685b84a4e83892d0033d846fd2570d1c54bf2d325203e7509"
     end
   end
 
