@@ -5,7 +5,7 @@
 class Cherryctl < Formula
   desc "Official Cherry Servers CLI"
   homepage "https://www.cherryservers.com/"
-  version "2.2.53"
+  version "2.2.54"
   license "MPL-2.0" # MPL 2.0
 
   livecheck do
@@ -15,25 +15,25 @@ class Cherryctl < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.53/cherryctl-v2.2.53-darwin-amd64.tar.gz"
-      sha256 "59cd97efa9b5eab8e17a0d8f26207bed210048692fa97aaf0f383ca23e24155c"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.54/cherryctl-v2.2.54-darwin-amd64.tar.gz"
+      sha256 "ac5859049b03e71039283089e5f5224b76c131f3f62273d9a0ed90727368698a"
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.53/cherryctl-v2.2.53-darwin-arm64.tar.gz"
-      sha256 "1a32e633d73e5ed87410f0f0fc5960e4544dfb032bd5c76aa16c4db77f517476"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.54/cherryctl-v2.2.54-darwin-arm64.tar.gz"
+      sha256 "3bdc134920a4e0a23c13c9dccb72be6455252f38f63bdd3fc43008b59aab8048"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.53/cherryctl-v2.2.53-linux-amd64-gnu.tar.gz"
-      sha256 "d35f0f880ccdb219211cc6037b1a6d6ba0b4e15a4b4390512b297231b2c675d6"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.54/cherryctl-v2.2.54-linux-amd64-gnu.tar.gz"
+      sha256 "dc9b59743222eb5bfca584ea6390f8fcb26ca225bafc34a534058500db22e561"
     end
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.53/cherryctl-v2.2.53-linux-arm64-static.tar.gz"
-      sha256 "db806e6be64c2d46fa6a850120b7438d6b50341bccb951f4ef95b7f798b6b8d3"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.54/cherryctl-v2.2.54-linux-arm64-static.tar.gz"
+      sha256 "e67b551d5246937e3a21eae6e8d050dc2166d7d276f7f9176acca818a4f35e66"
     end
   end
 
