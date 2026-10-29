@@ -5,7 +5,7 @@
 class Cherryctl < Formula
   desc "Official Cherry Servers CLI"
   homepage "https://www.cherryservers.com/"
-  version "2.2.45"
+  version "2.2.46"
   license "MPL-2.0" # MPL 2.0
 
   livecheck do
@@ -15,25 +15,25 @@ class Cherryctl < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.45/cherryctl-v2.2.45-darwin-amd64.tar.gz"
-      sha256 "39136b591b2333431e0c7ea90b3e9e1ff04e486207e78db5fe58d2dfdc118ef5"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.46/cherryctl-v2.2.46-darwin-amd64.tar.gz"
+      sha256 "1e1fbf87193e634c78534d9128ade2e72d93be8db01ace80d572aaf8e3959182"
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.45/cherryctl-v2.2.45-darwin-arm64.tar.gz"
-      sha256 "5b0316fb5a39a89b274832ed0e61213783f7391993cedf640f747181a659df84"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.46/cherryctl-v2.2.46-darwin-arm64.tar.gz"
+      sha256 "dd789d96b8a3a7244ac3ae68581a8b6bf728bf9f017a80297852439f0fc0f91b"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.45/cherryctl-v2.2.45-linux-amd64-gnu.tar.gz"
-      sha256 "53df47317b0e902c0d085253bca0b2527b0d9ac843b60413f64ce6b26cd5e81c"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.46/cherryctl-v2.2.46-linux-amd64-gnu.tar.gz"
+      sha256 "bcd3a929439f7d52c2b2bc6a894512fd0380297896d7e216f4cc41e2b6f1fe0c"
     end
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.45/cherryctl-v2.2.45-linux-arm64-static.tar.gz"
-      sha256 "d2a59c634980ba8172b43e2e737a78bd8b022eea69d56a8e1cb8f977faa64349"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.46/cherryctl-v2.2.46-linux-arm64-static.tar.gz"
+      sha256 "34a05e9e4dd96e3134bc78f93771b7bddb07281a5934dc834926bbaa02930870"
     end
   end
 
