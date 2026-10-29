@@ -5,7 +5,7 @@
 class Cherryctl < Formula
   desc "Official Cherry Servers CLI"
   homepage "https://www.cherryservers.com/"
-  version "2.2.48"
+  version "2.2.52"
   license "MPL-2.0" # MPL 2.0
 
   livecheck do
@@ -15,25 +15,25 @@ class Cherryctl < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.48/cherryctl-v2.2.48-darwin-amd64.tar.gz"
-      sha256 "e4af5c6fbc1a5e3b44e0da89c46e03b6d0c0628a971dee28d83994ee94aa5c17"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.52/cherryctl-v2.2.52-darwin-amd64.tar.gz"
+      sha256 "a9249dc70714df2c1f339d53908b9770f8a04d801b95e78a485e7bc1ef62eae8"
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.48/cherryctl-v2.2.48-darwin-arm64.tar.gz"
-      sha256 "d684a89b5c68e4c269656eec75673fe171ae6bd668ac7bcab0ee6f206a82465d"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.52/cherryctl-v2.2.52-darwin-arm64.tar.gz"
+      sha256 "e17222a78ca5f91a4e7d1da6cba98377952d846421fb95086ec5485808867570"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.48/cherryctl-v2.2.48-linux-amd64-gnu.tar.gz"
-      sha256 "8e72aeb1e2a0854f37adcd8fa14532f54ac8050ef275797f09a7c4f49f254e67"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.52/cherryctl-v2.2.52-linux-amd64-gnu.tar.gz"
+      sha256 "dd38cc75e70284119fa42522a5b83d4188218ab6e1d87932493987c4f6da08e1"
     end
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.48/cherryctl-v2.2.48-linux-arm64-static.tar.gz"
-      sha256 "c98b154d2a5bbf7685b84a4e83892d0033d846fd2570d1c54bf2d325203e7509"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.52/cherryctl-v2.2.52-linux-arm64-static.tar.gz"
+      sha256 "4f59bbd7852c59bdd427a0e968c3c9570e478d2ba084fe899e3bfa32aa42092f"
     end
   end
 
