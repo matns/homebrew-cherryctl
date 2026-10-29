@@ -5,7 +5,7 @@
 class Cherryctl < Formula
   desc "Official Cherry Servers CLI"
   homepage "https://www.cherryservers.com/"
-  version "2.2.52"
+  version "2.2.53"
   license "MPL-2.0" # MPL 2.0
 
   livecheck do
@@ -15,25 +15,25 @@ class Cherryctl < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.52/cherryctl-v2.2.52-darwin-amd64.tar.gz"
-      sha256 "a9249dc70714df2c1f339d53908b9770f8a04d801b95e78a485e7bc1ef62eae8"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.53/cherryctl-v2.2.53-darwin-amd64.tar.gz"
+      sha256 "59cd97efa9b5eab8e17a0d8f26207bed210048692fa97aaf0f383ca23e24155c"
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.52/cherryctl-v2.2.52-darwin-arm64.tar.gz"
-      sha256 "e17222a78ca5f91a4e7d1da6cba98377952d846421fb95086ec5485808867570"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.53/cherryctl-v2.2.53-darwin-arm64.tar.gz"
+      sha256 "1a32e633d73e5ed87410f0f0fc5960e4544dfb032bd5c76aa16c4db77f517476"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.52/cherryctl-v2.2.52-linux-amd64-gnu.tar.gz"
-      sha256 "dd38cc75e70284119fa42522a5b83d4188218ab6e1d87932493987c4f6da08e1"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.53/cherryctl-v2.2.53-linux-amd64-gnu.tar.gz"
+      sha256 "d35f0f880ccdb219211cc6037b1a6d6ba0b4e15a4b4390512b297231b2c675d6"
     end
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.52/cherryctl-v2.2.52-linux-arm64-static.tar.gz"
-      sha256 "4f59bbd7852c59bdd427a0e968c3c9570e478d2ba084fe899e3bfa32aa42092f"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.53/cherryctl-v2.2.53-linux-arm64-static.tar.gz"
+      sha256 "db806e6be64c2d46fa6a850120b7438d6b50341bccb951f4ef95b7f798b6b8d3"
     end
   end
 
