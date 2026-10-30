@@ -5,7 +5,7 @@
 class Cherryctl < Formula
   desc "Official Cherry Servers CLI"
   homepage "https://www.cherryservers.com/"
-  version "2.2.66"
+  version "2.2.67"
   license "MPL-2.0" # MPL 2.0
 
   livecheck do
@@ -15,25 +15,25 @@ class Cherryctl < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.66/cherryctl-v2.2.66-darwin-amd64.tar.gz"
-      sha256 "4c63d4157a6f7ca9f1dde18c7b7e56ed0efefd44ab7bf77b713f3a2eb318b7ce"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.67/cherryctl-v2.2.67-darwin-amd64.tar.gz"
+      sha256 "8529f20856cdeeb636449e7931c285a5c4710fd011bdcb4f27e080a94e7871cd"
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.66/cherryctl-v2.2.66-darwin-arm64.tar.gz"
-      sha256 "c70ff4a6be8182e7eea69a790053c7477228468b18af534d14e160f0258100a8"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.67/cherryctl-v2.2.67-darwin-arm64.tar.gz"
+      sha256 "40aa37939f57673061f6dd14873802ed78a99a7f4b059f80d7f64f3720a596fc"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.66/cherryctl-v2.2.66-linux-amd64-gnu.tar.gz"
-      sha256 "589af6197d7e4c4fad8ad2f300747b8a8052c15fe6668d146b0fcbca407cc6bb"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.67/cherryctl-v2.2.67-linux-amd64-gnu.tar.gz"
+      sha256 "93804770c79a69a1c0851dd7becac4505f0236a7a194b174ebc07ad51fce4cdf"
     end
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.66/cherryctl-v2.2.66-linux-arm64-static.tar.gz"
-      sha256 "d6f7344e47d717ba88e210f5e8b9e9657bceb64e05f9e5490ba8bbbc348fa607"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.67/cherryctl-v2.2.67-linux-arm64-static.tar.gz"
+      sha256 "d5b160c5fa6b380c2ea8626e292613eeaba14213fe6c466bf47f51f2aaf44646"
     end
   end
 
