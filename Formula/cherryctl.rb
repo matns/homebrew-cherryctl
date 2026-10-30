@@ -5,7 +5,7 @@
 class Cherryctl < Formula
   desc "Official Cherry Servers CLI"
   homepage "https://www.cherryservers.com/"
-  version "2.2.54"
+  version "2.2.64"
   license "MPL-2.0" # MPL 2.0
 
   livecheck do
@@ -15,25 +15,25 @@ class Cherryctl < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.54/cherryctl-v2.2.54-darwin-amd64.tar.gz"
-      sha256 "ac5859049b03e71039283089e5f5224b76c131f3f62273d9a0ed90727368698a"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.64/cherryctl-v2.2.64-darwin-amd64.tar.gz"
+      sha256 "8c00bdbcd53b8c097f9947da80b7dc7dabaea4de898afe2bb20cad459785d728"
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.54/cherryctl-v2.2.54-darwin-arm64.tar.gz"
-      sha256 "3bdc134920a4e0a23c13c9dccb72be6455252f38f63bdd3fc43008b59aab8048"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.64/cherryctl-v2.2.64-darwin-arm64.tar.gz"
+      sha256 "73661d590ab043fafcee316cab05205a9c8b2504246cc6b17f20699735bcf16f"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.54/cherryctl-v2.2.54-linux-amd64-gnu.tar.gz"
-      sha256 "dc9b59743222eb5bfca584ea6390f8fcb26ca225bafc34a534058500db22e561"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.64/cherryctl-v2.2.64-linux-amd64-gnu.tar.gz"
+      sha256 "9436c65f2be0978d970172dad0e062001362165bf2706549bab3cc40571726f9"
     end
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.54/cherryctl-v2.2.54-linux-arm64-static.tar.gz"
-      sha256 "e67b551d5246937e3a21eae6e8d050dc2166d7d276f7f9176acca818a4f35e66"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.64/cherryctl-v2.2.64-linux-arm64-static.tar.gz"
+      sha256 "1d13586977f74734a1a1ed018ee9ed1029169265a30dc100338f60c564481660"
     end
   end
 
