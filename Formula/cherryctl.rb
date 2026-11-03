@@ -5,35 +5,34 @@
 class Cherryctl < Formula
   desc "Official Cherry Servers CLI"
   homepage "https://www.cherryservers.com/"
-  version "2.2.67"
   license "MPL-2.0" # MPL 2.0
 
   livecheck do
-    url "https://github.com/matns/cherryctl"
+    url :stable
     strategy :github_latest
   end
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.67/cherryctl-v2.2.67-darwin-amd64.tar.gz"
-      sha256 "8529f20856cdeeb636449e7931c285a5c4710fd011bdcb4f27e080a94e7871cd"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.91/cherryctl-v2.2.91-darwin-amd64.tar.gz"
+      sha256 "06785632ebbb0e96b268bd7e48a1c103784af78ee24a2fbf1a75a6e4f439a4ca"
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.67/cherryctl-v2.2.67-darwin-arm64.tar.gz"
-      sha256 "40aa37939f57673061f6dd14873802ed78a99a7f4b059f80d7f64f3720a596fc"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.91/cherryctl-v2.2.91-darwin-arm64.tar.gz"
+      sha256 "2a4ec671e4046179417b9f3c1b33d451108a90f605a4ab350c8ea2a3e390728a"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.67/cherryctl-v2.2.67-linux-amd64-gnu.tar.gz"
-      sha256 "93804770c79a69a1c0851dd7becac4505f0236a7a194b174ebc07ad51fce4cdf"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.91/cherryctl-v2.2.91-linux-amd64-gnu.tar.gz"
+      sha256 "20690012de6bfbcf4bd52eecfe9fbfb6fbd27f836c2dc9274f6be49c693e7148"
     end
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.2.67/cherryctl-v2.2.67-linux-arm64-static.tar.gz"
-      sha256 "d5b160c5fa6b380c2ea8626e292613eeaba14213fe6c466bf47f51f2aaf44646"
+      url "https://github.com/matns/cherryctl/releases/download/v2.2.91/cherryctl-v2.2.91-linux-arm64-static.tar.gz"
+      sha256 "d3787ffe8b64b5cc44d858f4979b5206e81321f316afb8dd04c11547ea686491"
     end
   end
 
@@ -46,6 +45,6 @@ class Cherryctl < Formula
   end
 
   test do
-    system "#{bin}/cherryctl}", "-v"
+    system "bin/cherryctl", "-v"
   end
 end
