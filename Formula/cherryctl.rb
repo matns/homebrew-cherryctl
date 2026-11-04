@@ -5,7 +5,7 @@
 class Cherryctl < Formula
   desc "Official Cherry Servers CLI"
   homepage "https://www.cherryservers.com/"
-  license "MPL-2.0" # MPL 2.0
+  license "MPL-2.0"
 
   livecheck do
     url :stable
@@ -14,25 +14,25 @@ class Cherryctl < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/matns/cherryctl/releases/download/v2.3.36/cherryctl-v2.3.36-darwin-amd64.tar.gz"
-      sha256 "ffb0ab7f15d40d99c6c9070bf5da0e502ce4f66fc2305dbf9f22de6f9897b793"
+      url "https://github.com/matns/cherryctl/releases/download/v2.3.38/cherryctl-v2.3.38-darwin-amd64.tar.gz"
+      sha256 "2bf88412418d652c8858259d4a1de8e3a7e0799a0dfad745654241f145fda1d7"
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/matns/cherryctl/releases/download/v2.3.36/cherryctl-v2.3.36-darwin-arm64.tar.gz"
-      sha256 "7b6f1a461bced0a6241ab69b815c3a9fce80f42af2a4237ad1e2f274bb7c26ea"
+      url "https://github.com/matns/cherryctl/releases/download/v2.3.38/cherryctl-v2.3.38-darwin-arm64.tar.gz"
+      sha256 "b856b541e67f8ce976584cd98f074558031b0b80c5f9d3be69c84684afcea30f"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.3.36/cherryctl-v2.3.36-linux-amd64-gnu.tar.gz"
-      sha256 "50eeed686d055b5ce50b0c4a8399c493f4f8311eef9aac7ab00c9424a68396a9"
+      url "https://github.com/matns/cherryctl/releases/download/v2.3.38/cherryctl-v2.3.38-linux-amd64-gnu.tar.gz"
+      sha256 "445f4a5361a0dabbee028e660a9fa9d918324e1f5737f47dcc8b4990933165d6"
     end
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.3.36/cherryctl-v2.3.36-linux-arm64-static.tar.gz"
-      sha256 "fe1d2210fb06fbd5d9fcf7d6f61c1f355c650d969786c7ce178bc9581ea79dfa"
+      url "https://github.com/matns/cherryctl/releases/download/v2.3.38/cherryctl-v2.3.38-linux-arm64-static.tar.gz"
+      sha256 "a09baba2f5c5dbd89b760fe551b9f5049dc3e475048f508b2f6eb3ff931da454"
     end
   end
 
