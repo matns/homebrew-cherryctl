@@ -14,25 +14,25 @@ class Cherryctl < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/matns/cherryctl/releases/download/v2.3.34/cherryctl-v2.3.34-darwin-amd64.tar.gz"
-      sha256 "6e899ea7fa1da0031fa641730736055d3db3ce7d43cf170a9ff2f012ab6ce176"
+      url "https://github.com/matns/cherryctl/releases/download/v2.3.36/cherryctl-v2.3.36-darwin-amd64.tar.gz"
+      sha256 "ffb0ab7f15d40d99c6c9070bf5da0e502ce4f66fc2305dbf9f22de6f9897b793"
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/matns/cherryctl/releases/download/v2.3.34/cherryctl-v2.3.34-darwin-arm64.tar.gz"
-      sha256 "bbe518e3e2c709e6b4dcb52e66bb556e2d24588248bfdd9e871f219a53b32ec7"
+      url "https://github.com/matns/cherryctl/releases/download/v2.3.36/cherryctl-v2.3.36-darwin-arm64.tar.gz"
+      sha256 "7b6f1a461bced0a6241ab69b815c3a9fce80f42af2a4237ad1e2f274bb7c26ea"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.3.34/cherryctl-v2.3.34-linux-amd64-gnu.tar.gz"
-      sha256 "27fbe13749df0cfc06d1b7607de37be2991cbc2c90e7a0268da4563cd4e633f1"
+      url "https://github.com/matns/cherryctl/releases/download/v2.3.36/cherryctl-v2.3.36-linux-amd64-gnu.tar.gz"
+      sha256 "50eeed686d055b5ce50b0c4a8399c493f4f8311eef9aac7ab00c9424a68396a9"
     end
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matns/cherryctl/releases/download/v2.3.34/cherryctl-v2.3.34-linux-arm64-static.tar.gz"
-      sha256 "d72c7d17679a1b121fe69f2f59232bcfeaa538274fef3b8f528443f1fde305fd"
+      url "https://github.com/matns/cherryctl/releases/download/v2.3.36/cherryctl-v2.3.36-linux-arm64-static.tar.gz"
+      sha256 "fe1d2210fb06fbd5d9fcf7d6f61c1f355c650d969786c7ce178bc9581ea79dfa"
     end
   end
 
